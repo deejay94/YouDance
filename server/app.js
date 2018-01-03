@@ -27,6 +27,9 @@ app.use(function(req, res, next) {
 mongoose.connect('mongodb://localhost/youdance');
 mongoose.connection.once('open', function() {
 
+  // Load models
+  app.models = require('./models/index')
+
   console.log('Listening on port 3000...');
   app.listen(3000);
 });
