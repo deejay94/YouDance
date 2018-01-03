@@ -1,1 +1,15 @@
-<p>This is the dances view.</p>
+<table class="table table-striped">
+  <thead>
+    <th>Name</th>
+    <th>Genre</th>
+    <th>URL</th>
+  </thead>
+  <tbody>
+
+    <tr ng-repeat="dance in dances">
+      <td>{{ dance.name }}</td>
+      <td>{{ dance.genre }}</td>
+      <td>{{ dance.url }}</td>
+    </tr>
+      </tbody>
+    </table>
