@@ -25,15 +25,9 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/movies', {
-        templateUrl: 'views/movies.html',
-        controller: 'MoviesCtrl',
-        controllerAs: 'movies'
-      })
       .when('/dances', {
         templateUrl: 'views/dances.html',
-        controller: 'DancesCtrl',
-        controllerAs: 'dances'
+        controller: 'DancesCtrl'
       })
       .otherwise({
         redirectTo: '/'
