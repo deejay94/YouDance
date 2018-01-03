@@ -1,4 +1,4 @@
-<table class="table table-striped">
+<table class="table table-striped" ng-init="getDances()">
   <thead>
     <th>Name</th>
     <th>Genre</th>
@@ -7,7 +7,7 @@
   <tbody>
 
     <tr ng-repeat="dance in dances">
-      <td>{{ dance.name }}</td>
+      <td><a>{{ dance.name }}</a></td>
       <td>{{ dance.genre }}</td>
       <td>{{ dance.url }}</td>
     </tr>
