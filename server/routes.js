@@ -1,3 +1,3 @@
 module.exports = {
-  '/dance': require('./controllers/DanceController')
+  '/dances': require('./controllers/DanceController')
 }
