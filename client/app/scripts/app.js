@@ -11,7 +11,8 @@
 angular
   .module('clientApp', [
     'ngResource',
-    'ngRoute'
+    'ngRoute',
+    'videosharing-embed'
   ])
   .config(function ($routeProvider) {
 
