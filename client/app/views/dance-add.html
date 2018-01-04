@@ -1,1 +1,15 @@
-<p>This is the dance-add view.</p>
+<form role="form">
+  <div class="form-group">
+    <label for="title" class="control-label">Name</label>
+    <input type="text" ng-model="dance.name" class="form-control" id="title" placeholder="Enter the dance name"/>
+  </div>
+  <div class="form-group">
+    <label for="title" class="control-label">Genre</label>
+    <input type="text" ng-model="dance.genre" class="form-control" id="title" placeholder="Enter the dance genre"/>
+  </div>
+  <div class="form-group">
+    <label for="title" class="control-label">URL</label>
+    <input type="text" ng-model="dance.url" class="form-control" id="title" placeholder="Enter the YouTube URL"/>
+  </div>
+  <input type="submit" class="btn btn-primary" ng-click="addDance()" value="Save"/>
+</form>
