@@ -7,12 +7,10 @@
     <div class="row">
       <div class="col-md-4">
         <!-- <embed-video data-ng-href="{{dance.url}}" force-protocol="https" controls=0><a href="http://www.youtube.com/watch?v=LOKyEt36Kjc">Watch</a></embed-video> -->
+        <embed-video href="{{dance.url}}" width=800 height=600 [force-protocol="ANY"] [options]></embed-video>
       </div>
       <div class="col-md-8">
       <p>{{dance.genre}}</p>
-      </div>
-      <div class="col-md-8">
-      <p>{{dance.url}}</p>
       </div>
     </div>
   </div>

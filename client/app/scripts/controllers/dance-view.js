@@ -17,7 +17,6 @@ angular.module('clientApp')
         console.log(id);
     		$http.get('http://localhost:3000/dances/' +id).then(function(response){
     			$scope.dance = response.data;
-
     		});
-    	}
+      }
   }]);
