@@ -38,7 +38,7 @@ angular
         templateUrl: 'views/dance-view.html',
         controller: 'DanceViewCtrl',
       })
-      .when('/dance/:id/delete', {
+      .when('/dances/:_id/delete', {
         templateUrl: 'views/dance-delete.html',
         controller: 'DanceDeleteCtrl',
       })
