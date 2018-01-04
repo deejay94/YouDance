@@ -8,10 +8,11 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('DanceEditCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('DanceEditCtrl', ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) {
+    $scope.updateDance = function(){
+  		var id = $routeParams._id;
+  		$http.put('http://localhost:3000/dances/'+id, $scope.dance).then(function(response){
+  			window.location.href='#!/dances';
+  		});
+  	}
+  }]);
