@@ -18,13 +18,6 @@ angular.module('clientApp')
       console.log(response.data);
 		});
 	}
-
-	// $scope.getDance = function(){
-	// 	var id = $routeParams.id;
-	// 	$http.get('/api/dances/'+id).then(function(response){
-	// 		$scope.dance = response.data;
-	// 	});
-	// }
   //
 	// $scope.addDance = function(){
 	// 	console.log($scope.dance);
