@@ -26,12 +26,4 @@ angular.module('clientApp')
 	// 	});
 	// }
   //
-
-  //
-	// $scope.removeDance = function(id){
-	// 	// var id = $routeParams.id;
-	// 	$http.delete('/api/dances/'+id).then(function(response){
-	// 		window.location.href='#!/dances';
-	// 	});
-	// }
 }]);
