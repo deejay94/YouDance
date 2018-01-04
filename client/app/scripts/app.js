@@ -11,9 +11,11 @@
 angular
   .module('clientApp', [
     'ngResource',
-    'ngRoute'
+    'ngRoute',
+    'videosharing-embed'
   ])
   .config(function ($routeProvider) {
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -28,6 +30,22 @@ angular
       .when('/dances', {
         templateUrl: 'views/dances.html',
         controller: 'DancesCtrl'
+      })
+      .when('/create/dance', {
+        templateUrl: 'views/dance-add.html',
+        controller: 'DanceAddCtrl',
+      })
+      .when('/dances/:_id', {
+        templateUrl: 'views/dance-view.html',
+        controller: 'DanceViewCtrl',
+      })
+      .when('/dances/:_id/delete', {
+        templateUrl: 'views/dance-delete.html',
+        controller: 'DanceDeleteCtrl',
+      })
+      .when('/dances/:_id/edit', {
+        templateUrl: 'views/dance-edit.html',
+        controller: 'DanceEditCtrl',
       })
       .otherwise({
         redirectTo: '/'

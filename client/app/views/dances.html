@@ -1,4 +1,6 @@
-<table class="table table-striped">
+<a class="btn btn-primary" href="/#!/create/dance"><span class="glyphicon glyphicon-plus"></span> Create Dance</a>
+
+<table class="table table-striped" ng-init="getDances()">
   <thead>
     <th>Name</th>
     <th>Genre</th>
@@ -7,7 +9,7 @@
   <tbody>
 
     <tr ng-repeat="dance in dances">
-      <td>{{ dance.name }}</td>
+      <td><a ng-href="#!/dances/{{dance._id}}">{{ dance.name }}</a></td>
       <td>{{ dance.genre }}</td>
       <td>{{ dance.url }}</td>
     </tr>

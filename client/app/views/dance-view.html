@@ -1,0 +1,21 @@
+<a href="#!/dances">Go Back</a>
+<div class="panel panel-default" ng-init="getDance()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{dance.name}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- <embed-video data-ng-href="{{dance.url}}" force-protocol="https" controls=0><a href="http://www.youtube.com/watch?v=LOKyEt36Kjc">Watch</a></embed-video> -->
+        <embed-video href="{{dance.url}}" width=800 height=600 [force-protocol="ANY"] [options]></embed-video>
+      </div>
+      <div class="col-md-8">
+      <p>{{dance.genre}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#!/dances/{{dance._id}}/edit">Edit</a> |  <a href="#!/dances/{{dance._id}}/delete" ng-click="removeDance(dance._id)">Delete</a>
+</div>

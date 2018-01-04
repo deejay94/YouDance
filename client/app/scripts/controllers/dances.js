@@ -8,27 +8,14 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('DancesCtrl', function ($scope) {
-    $scope.dances = [
-      {
-          name: 'whip/nae nae',
-          genre: 'hip-hop',
-          url: 'https://www.youtube.com/watch?v=vjW8wmF5VWc'
-        },
-        {
-            name: 'milly rock',
-            genre: 'hip-hop',
-            url: 'https://www.youtube.com/watch?v=PMzDoFuVgRg'
-          },
-          {
-              name: 'billy bounce',
-              genre: 'hip-hop',
-              url: 'https://www.youtube.com/watch?v=zRW8LJ2_984'
-          },
-          {
-              name: 'Do it like me',
-              genre: 'hip-hop',
-              url: 'https://www.youtube.com/watch?v=7hl0aTooA90'
-          }
-    ];
-  });
+  .controller('DancesCtrl', ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) {
+
+	console.log('DancesController loaded...');
+
+	$scope.getDances = function(){
+		$http.get('http://localhost:3000/dances').then(function(response){
+			$scope.dances = response.data;
+      console.log(response.data);
+		});
+	}
+}]);
