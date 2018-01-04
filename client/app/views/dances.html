@@ -7,7 +7,7 @@
   <tbody>
 
     <tr ng-repeat="dance in dances">
-      <td><a>{{ dance.name }}</a></td>
+      <td><a ng-href="#!/dances/{{dance._id}}">{{ dance.name }}</a></td>
       <td>{{ dance.genre }}</td>
       <td>{{ dance.url }}</td>
     </tr>
