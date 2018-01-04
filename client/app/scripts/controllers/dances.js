@@ -18,12 +18,4 @@ angular.module('clientApp')
       console.log(response.data);
 		});
 	}
-  //
-	// $scope.addDance = function(){
-	// 	console.log($scope.dance);
-	// 	$http.post('/api/dances/', $scope.dance).then(function(response){
-	// 		window.location.href='#/dances';
-	// 	});
-	// }
-  //
 }]);
