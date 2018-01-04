@@ -42,7 +42,7 @@ angular
         templateUrl: 'views/dance-delete.html',
         controller: 'DanceDeleteCtrl',
       })
-      .when('/dance/:id/edit', {
+      .when('/dances/:_id/edit', {
         templateUrl: 'views/dance-edit.html',
         controller: 'DanceEditCtrl',
       })
