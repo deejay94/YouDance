@@ -10,9 +10,21 @@ const DanceSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  url: {
+  url1: {
     type: String,
     required: true
+  },
+  url2: {
+    type: String
+  },
+  url3: {
+    type: String
+  },
+  url4: {
+    type: String
+  },
+  url5: {
+    type: String
   }
 })
 
