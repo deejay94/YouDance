@@ -30,6 +30,22 @@ angular
         templateUrl: 'views/dances.html',
         controller: 'DancesCtrl'
       })
+      .when('/create/dance', {
+        templateUrl: 'views/dance-add.html',
+        controller: 'DanceAddCtrl',
+      })
+      .when('/dances/:_id', {
+        templateUrl: 'views/dance-view.html',
+        controller: 'DanceViewCtrl',
+      })
+      .when('/dance/:id/delete', {
+        templateUrl: 'views/dance-delete.html',
+        controller: 'DanceDeleteCtrl',
+      })
+      .when('/dance/:id/edit', {
+        templateUrl: 'views/dance-edit.html',
+        controller: 'DanceEditCtrl',
+      })
       .otherwise({
         redirectTo: '/'
       });
