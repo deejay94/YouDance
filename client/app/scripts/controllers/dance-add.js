@@ -13,8 +13,6 @@ angular.module('clientApp')
   		$http.post('http://localhost:3000/dances', $scope.dance)
       .then(function(response){
   			window.location.href='#!/dances';
-  		})
-      .then(function(){
         $('#message').text('Successfully Added a dance')
   		})
       .catch(function() {
