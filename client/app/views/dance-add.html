@@ -1,19 +1,21 @@
+<a href="#!/dances">Go Back</a>
+
 <form role="form">
   <div class="form-group">
-    <label for="title" class="control-label">Name</label>
-    <input type="text" ng-model="dance.name" class="form-control" id="title" placeholder="Enter the dance name"/>
+    <label for="name" class="control-label">Name</label>
+    <input type="text" ng-model="dance.name" class="form-control" id="name" placeholder="Enter the dance name" required/>
   </div>
   <div class="form-group">
-    <label for="title" class="control-label">Genre</label>
-    <input type="text" ng-model="dance.genre" class="form-control" id="title" placeholder="Enter the dance genre"/>
+    <label for="genre" class="control-label">Genre</label>
+    <input type="text" ng-model="dance.genre" class="form-control" id="genre" placeholder="Enter the dance genre" required/>
   </div>
   <div class="form-group">
-    <label for="title" class="control-label">URL</label>
-    <input type="text" ng-model="dance.url1" class="form-control" id="title" placeholder="Enter the YouTube URL"/>
-    <input type="text" ng-model="dance.url2" class="form-control" id="title" placeholder="Enter the YouTube URL"/>
-    <input type="text" ng-model="dance.url3" class="form-control" id="title" placeholder="Enter the YouTube URL"/>
-    <input type="text" ng-model="dance.url4" class="form-control" id="title" placeholder="Enter the YouTube URL"/>
-    <input type="text" ng-model="dance.url5" class="form-control" id="title" placeholder="Enter the YouTube URL"/>
+    <label for="url" class="control-label">URL</label>
+    <input type="text" ng-model="dance.url1" class="form-control url" placeholder="Enter the YouTube URL" required/>
+    <input type="text" ng-model="dance.url2" class="form-control url" placeholder="Enter the YouTube URL"/>
+    <input type="text" ng-model="dance.url3" class="form-control url" placeholder="Enter the YouTube URL"/>
+    <input type="text" ng-model="dance.url4" class="form-control url" placeholder="Enter the YouTube URL"/>
+    <input type="text" ng-model="dance.url5" class="form-control url" placeholder="Enter the YouTube URL"/>
   </div>
   <input type="submit" class="btn btn-primary" ng-click="addDance()" value="Save"/>
 </form>

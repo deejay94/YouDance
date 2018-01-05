@@ -1,7 +1,9 @@
+<a href="#!/dances">Go Back</a>
+
 <form role="form">
   <p>Are you sure you wish to delete the movie {{ dance.name }}?</p>
   <div class="form-group">
     <input type="submit" class="btn btn-danger" ng-click="removeDance()" value="Yes"/>
-    <button ng-click="back()" type="button" class="btn btn-default">No</button>
+    <a href="#!/dances" class="btn btn-primary">No</a>
   </div>
 </form>
