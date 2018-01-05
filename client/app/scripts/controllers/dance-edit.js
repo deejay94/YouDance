@@ -14,10 +14,10 @@ angular.module('clientApp')
   		$http.put('http://localhost:3000/dances/'+id, $scope.dance)
       .then(function(response){
   			window.location.href='#!/dances';
-        $('#message').text('Successfully Edited a dance')
+        $('#message').text('Successfully Edited a dance').show().fadeOut(1800)
   		})
       .catch(function() {
-        $('#message').text('You have not successfully Edited a dance')
+        $('#message').text('You have not successfully Edited a dance').show()
       })
   	}
   }]);

@@ -14,11 +14,11 @@ angular.module('clientApp')
   		$http.delete('http://localhost:3000/dances/'+id)
       .then(function(response){
   			window.location.href='#!/dances';
-        $('#message').text('You have successfully deleted a dance')
+        $('#message').text('You have successfully deleted a dance').show().fadeOut(1800)
   		})
       .catch(function(response) {
         window.location.href='#!/dances';
-        $('#message').text('You have not successfully deleted a dance')
+        $('#message').text('You have not successfully deleted a dance').show()
       })
   	}
   }]);

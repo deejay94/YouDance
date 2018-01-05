@@ -13,11 +13,10 @@ angular.module('clientApp')
   		$http.post('http://localhost:3000/dances', $scope.dance)
       .then(function(response){
   			window.location.href='#!/dances';
-        $('#message').text('Successfully Added a dance')
+        $('#message').text('Successfully added a dance').show().fadeOut(1800)
   		})
       .catch(function() {
-        $('#message').text('Please fill in all necessary fields')
-      })
-  	}
-
+        $('#message').text('Please fill in all necessary fields').show()
+  	   })
+    }
   }]);
